@@ -14,8 +14,6 @@ npm install react-native-nearby-modern
 import NearbyModern from "react-native-nearby-modern";
 
 // ...
-
-const result = await NearbyModern.multiply(3, 7);
 ```
 
 ## Contributing
