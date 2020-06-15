@@ -1,21 +1,22 @@
 {
-  "name": "react-native-nearby",
+  "name": "react-native-nearby-modern",
   "title": "React Native Nearby",
   "version": "1.0.0",
   "description": "React Native bindings for Google's Nearby API for Android",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
-    "README.md",
-    "android",
-    "index.js"
+    "/dist"
   ],
   "scripts": {
+    "build": "tsc",
+    "prepare": "yarn build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mego/react-native-nearby.git",
-    "baseUrl": "https://github.com/Mego/react-native-nearby"
+    "url": "git+https://github.com/Mego/react-native-nearby-modern.git",
+    "baseUrl": "https://github.com/Mego/react-native-nearby-modern"
   },
   "keywords": [
     "react-native"
@@ -34,5 +35,8 @@
   "devDependencies": {
     "react": "^16.9.0",
     "react-native": "^0.61.5"
+  },
+  "dependencies": {
+    "@types/react-native": "^0.62.13"
   }
 }

@@ -1,4 +1,4 @@
-declare module "react-native-nearby" {
+declare module "react-native-nearby-modern" {
   export type Nearby = {
     startAdvertising: (strategyID: number, nickname: string) => Promise<void>;
     startDiscovery: (strategyID: number, nickname: string) => Promise<void>;
